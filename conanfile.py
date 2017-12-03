@@ -11,10 +11,11 @@ class LibOggConan(ConanFile):
     url = "https://github.com/bincrafters/conan-libogg"
     description = "Ogg is a free, open container format maintained by the Xiph.Org Foundation."
     license = "https://www.xiph.org/licenses/bsd/"
-    exports_sources = ["CMakeLists.txt", "LICENSE"]
     settings = "os", "arch", "compiler", "build_type"
     options = {"shared": [True, False]}
     default_options = "shared=False"
+    exports_sources = ["CMakeLists.txt", "LICENSE"]
+    generators = "cmake"
 
     def source(self):
         source_url = "https://github.com/xiph/ogg/archive"
@@ -24,7 +25,7 @@ class LibOggConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure(source_dir="sources")
+        cmake.configure()
         cmake.build()
 
     def package(self):
