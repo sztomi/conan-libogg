@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/bincrafters/conan-libogg.svg?branch=stable%2F1.3.3)](https://travis-ci.org/bincrafters/conan-libogg)
 [![Build status](https://ci.appveyor.com/api/projects/status/sxs9n6vb8nqa92l5?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-libogg)
 
-[Conan.io](https://conan.io) package for [libogg](https://github.com/someauthor/libogg) project
+[Conan.io](https://conan.io) package for the [libogg](https://github.com/xiph/ogg) project
 
 The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/libogg%3Abincrafters).
 
